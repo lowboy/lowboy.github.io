@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>完美解决 Linux 下 Sublime Text 中文输入 | 大话王</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这个方法实在是太好了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="完美解决 Linux 下 Sublime Text 中文输入">
+<meta property="og:url" content="http://blog.talkfish.net/2014/05/06/sublime_text-CN_input-under_linux/index.html">
+<meta property="og:site_name" content="大话王">
+<meta property="og:description" content="这个方法实在是太好了">
+<meta property="og:updated_time" content="2015-05-26T05:40:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="完美解决 Linux 下 Sublime Text 中文输入">
+<meta name="twitter:description" content="这个方法实在是太好了">
+  
+    <link rel="alternative" href="/atom.xml" title="大话王" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/avatar.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lowboy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">这辈子扯了太多蛋，只想再说几句真心话</p>
+		
+				
+
+
+		
+			<div id="switch-btn" class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div id="switch-area" class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives/">所有文章</a></li>
+				        
+							<li><a href="/tags/">标签云</a></li>
+				        
+							<li><a href="/about/">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<ul class="social">
+							
+								<li id="Email"><a class="Email" target="_blank" href="/ibrikex1@gmail.com" title="Email"></a></li>
+					        
+								<li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/lowboy" title="GitHub"></a></li>
+					        
+								<li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+					        
+						</ul>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Basketball/" style="font-size: 15px;">Basketball</a> <a href="/tags/Books/" style="font-size: 10px;">Books</a> <a href="/tags/Entertainment/" style="font-size: 15px;">Entertainment</a> <a href="/tags/Mise-en-scene/" style="font-size: 10px;">Mise-en-scene</a> <a href="/tags/Movies/" style="font-size: 17.5px;">Movies</a> <a href="/tags/NBA/" style="font-size: 15px;">NBA</a> <a href="/tags/PPA/" style="font-size: 10px;">PPA</a> <a href="/tags/VPS/" style="font-size: 12.5px;">VPS</a> <a href="/tags/fcitx/" style="font-size: 10px;">fcitx</a> <a href="/tags/linux/" style="font-size: 12.5px;">linux</a> <a href="/tags/parkour/" style="font-size: 10px;">parkour</a> <a href="/tags/sublime/" style="font-size: 15px;">sublime</a> <a href="/tags/学习笔记/" style="font-size: 12.5px;">学习笔记</a> <a href="/tags/开源软件/" style="font-size: 15px;">开源软件</a> <a href="/tags/没事闲的/" style="font-size: 15px;">没事闲的</a> <a href="/tags/清芬/" style="font-size: 10px;">清芬</a> <a href="/tags/电影/" style="font-size: 17.5px;">电影</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/积累/" style="font-size: 20px;">积累</a> <a href="/tags/跑酷/" style="font-size: 10px;">跑酷</a> <a href="/tags/长镜头/" style="font-size: 10px;">长镜头</a> <a href="/tags/随看/" style="font-size: 15px;">随看</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">oh`</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Lowboy</a></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<a href="/" class="profilepic">
+				<img lazy-src="/img/avatar.png" class="js-avatar">
+			</a>
+			<hgroup>
+			  <h1 class="header-author"><a href="/" title="回到主页">Lowboy</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">这辈子扯了太多蛋，只想再说几句真心话</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives/">所有文章</a></li>
+		        
+					<li><a href="/tags/">标签云</a></li>
+		        
+					<li><a href="/about/">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+						<ul class="social">
+							
+								<li id="Email"><a class="Email" target="_blank" href="/ibrikex1@gmail.com" title="Email"></a></li>
+					        
+								<li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/lowboy" title="GitHub"></a></li>
+					        
+								<li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+					        
+						</ul>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-sublime_text-CN_input-under_linux" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/05/06/sublime_text-CN_input-under_linux/" class="article-date">
+  	<time datetime="2014-05-06T11:36:59.000Z" itemprop="datePublished">2014年 05月06日</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      完美解决 Linux 下 Sublime Text 中文输入
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fcitx/">fcitx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源软件/">开源软件</a></li></ul>
+	</div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><strong><em>这个方法实在是太好了</em></strong><br><a id="more"></a><br><em><em>声明：此文非原创，而是综合了若干人的工作而成</em><br><em>参考文章见文末</em></em></p>
+<hr>
+<p>##测试环境：##<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OS:linuxmint16_x64(xfce)&#10;Fcitx:4.2.8.3&#10;sublime_text:3059</span><br></pre></td></tr></table></figure></p>
+<p>###第一步###</p>
+<ul>
+<li>将下列代码保存为<code>subsublime-imfix.c</code><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">sublime-imfix.c</span><br><span class="line">Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.</span><br><span class="line">By Cjacker Huang</span><br><span class="line"></span><br><span class="line">gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC</span><br><span class="line">LD_PRELOAD=./libsublime-imfix.so subl</span><br><span class="line">*/</span><br><span class="line">#include &lt;gtk/gtk.h&gt;</span><br><span class="line">#include &lt;gdk/gdkx.h&gt;</span><br><span class="line">typedef GdkSegment GdkRegionBox;</span><br><span class="line"></span><br><span class="line">struct _GdkRegion</span><br><span class="line">&#123;</span><br><span class="line">  long size;</span><br><span class="line">  long numRects;</span><br><span class="line">  GdkRegionBox *rects;</span><br><span class="line">  GdkRegionBox extents;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">GtkIMContext *local_context;</span><br><span class="line"></span><br><span class="line">void</span><br><span class="line">gdk_region_get_clipbox (const GdkRegion *region,</span><br><span class="line">            GdkRectangle    *rectangle)</span><br><span class="line">&#123;</span><br><span class="line">  g_return_if_fail (region != NULL);</span><br><span class="line">  g_return_if_fail (rectangle != NULL);</span><br><span class="line"></span><br><span class="line">  rectangle-&gt;x = region-&gt;extents.x1;</span><br><span class="line">  rectangle-&gt;y = region-&gt;extents.y1;</span><br><span class="line">  rectangle-&gt;width = region-&gt;extents.x2 - region-&gt;extents.x1;</span><br><span class="line">  rectangle-&gt;height = region-&gt;extents.y2 - region-&gt;extents.y1;</span><br><span class="line">  GdkRectangle rect;</span><br><span class="line">  rect.x = rectangle-&gt;x;</span><br><span class="line">  rect.y = rectangle-&gt;y;</span><br><span class="line">  rect.width = 0;</span><br><span class="line">  rect.height = rectangle-&gt;height;</span><br><span class="line">  //The caret width is 2;</span><br><span class="line">  //Maybe sometimes we will make a mistake, but for most of the time, it should be the caret.</span><br><span class="line">  if(rectangle-&gt;width == 2 &amp;&amp; GTK_IS_IM_CONTEXT(local_context)) &#123;</span><br><span class="line">        gtk_im_context_set_cursor_location(local_context, rectangle);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//this is needed, for example, if you input something in file dialog and return back the edit area</span><br><span class="line">//context will lost, so here we set it again.</span><br><span class="line"></span><br><span class="line">static GdkFilterReturn event_filter (GdkXEvent *xevent, GdkEvent *event, gpointer im_context)</span><br><span class="line">&#123;</span><br><span class="line">    XEvent *xev = (XEvent *)xevent;</span><br><span class="line">    if(xev-&gt;type == KeyRelease &amp;&amp; GTK_IS_IM_CONTEXT(im_context)) &#123;</span><br><span class="line">       GdkWindow * win = g_object_get_data(G_OBJECT(im_context),"window");</span><br><span class="line">       if(GDK_IS_WINDOW(win))</span><br><span class="line">         gtk_im_context_set_client_window(im_context, win);</span><br><span class="line">    &#125;</span><br><span class="line">    return GDK_FILTER_CONTINUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void gtk_im_context_set_client_window (GtkIMContext *context,</span><br><span class="line">          GdkWindow    *window)</span><br><span class="line">&#123;</span><br><span class="line">  GtkIMContextClass *klass;</span><br><span class="line">  g_return_if_fail (GTK_IS_IM_CONTEXT (context));</span><br><span class="line">  klass = GTK_IM_CONTEXT_GET_CLASS (context);</span><br><span class="line">  if (klass-&gt;set_client_window)</span><br><span class="line">    klass-&gt;set_client_window (context, window);</span><br><span class="line"></span><br><span class="line">  if(!GDK_IS_WINDOW (window))</span><br><span class="line">    return;</span><br><span class="line">  g_object_set_data(G_OBJECT(context),"window",window);</span><br><span class="line">  int width = gdk_window_get_width(window);</span><br><span class="line">  int height = gdk_window_get_height(window);</span><br><span class="line">  if(width != 0 &amp;&amp; height !=0) &#123;</span><br><span class="line">    gtk_im_context_focus_in(context);</span><br><span class="line">    local_context = context;</span><br><span class="line">  &#125;</span><br><span class="line">  gdk_window_add_filter (window, event_filter, context);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<p>###第二步###</p>
+<ul>
+<li>安装 <code>C/C++ 的编译环境</code>和 <code>gtk libgtk2.0-dev</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install build-essential libgtk2.0-dev</span><br></pre></td></tr></table></figure>
+<hr>
+<p>###第三步###</p>
+<ul>
+<li>编译共享内<del><font size="3px" color="#ff0000">裤</font></del>库</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC</span><br></pre></td></tr></table></figure>
+<hr>
+<p>###第四步###</p>
+<ul>
+<li>设置 LD_PRELOAD 并启动 Sublime Text<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$LD_PRELOAD=./libsublime-imfix.so subl</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<p>###第五步###</p>
+<ul>
+<li><font color="#ff0000"><em>一定要记得</em></font>把<code>libsublime-imfix.so</code>放到<code>/opt/sublime_text/</code>中</li>
+</ul>
+<hr>
+<p>###第六步###</p>
+<ul>
+<li>修改<code>/usr/share/applications/sublime_text.desktop</code><br>修改前，文件示例：<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]&#10;Version=1.0&#10;Type=Application&#10;Name=Sublime Text&#10;GenericName=Text Editor&#10;Comment=Sophisticated text editor for code, markup and prose&#10;Exec=/opt/sublime_text/sublime_text %F&#10;Terminal=false&#10;MimeType=text/plain;&#10;Icon=sublime-text&#10;Categories=TextEditor;Development;&#10;StartupNotify=true&#10;Actions=Window;Document;&#10;&#10;[Desktop Action Window]&#10;Name=New Window&#10;Exec=/opt/sublime_text/sublime_text -n&#10;OnlyShowIn=Unity;&#10;&#10;[Desktop Action Document]&#10;Name=New File&#10;Exec=/opt/sublime_text/sublime_text --command new_file&#10;OnlyShowIn=Unity;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>然后在每一个<code>Exec=</code>后添加上这一句</p>
+<blockquote>
+<p><code>env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so</code> </p>
+</blockquote>
+<p>修改后，应该是这个样子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Version=<span class="number">1.0</span></span><br><span class="line">Type=Application</span><br><span class="line">Name=Sublime Text</span><br><span class="line">GenericName=Text Editor</span><br><span class="line">Comment=Sophisticated text editor <span class="keyword">for</span> code, markup and prose</span><br><span class="line">Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">MimeType=text/plain;</span><br><span class="line">Icon=sublime-text</span><br><span class="line">Categories=TextEditor;Development;</span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Actions=Window;Document;</span><br><span class="line"></span><br><span class="line">[Desktop Action Window]</span><br><span class="line">Name=New Window</span><br><span class="line">Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text -n</span><br><span class="line">OnlyShowIn=Unity;</span><br><span class="line"></span><br><span class="line">[Desktop Action Document]</span><br><span class="line">Name=New File</span><br><span class="line">Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text --command new_file</span><br><span class="line">OnlyShowIn=Unity;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>###第七步###<br>修改<code>/usr/bin/subl</code>为</p>
+<pre><code>#!/bin/sh
+export LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so
+exec /opt/sublime_text/sublime_text &quot;$@&quot;
+</code></pre><hr>
+<p>Congratulations！<br>做完了以上这些，你就可以享受sublime和fcitx的无间配合啦！</p>
+<hr>
+<p>参考文章:<br><a href="https://www.sinosky.org/linux-sublime-text-fcitx.html" target="_blank" rel="external">1. 完美解决 Linux 下 Sublime Text 中文输入  by  Jat</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<div class="copyright">
+  <p><span>本文标题:</span><a href="/2014/05/06/sublime_text-CN_input-under_linux/">完美解决 Linux 下 Sublime Text 中文输入</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Lowboy 的个人博客">Lowboy</a></p>
+  <p><span>发布时间:</span>2014年05月06日 - 19时36分</p>
+  <p><span>最后更新:</span>2015年05月26日 - 13时40分</p>
+  <p>
+    <span>原始链接:</span><a href="/2014/05/06/sublime_text-CN_input-under_linux/" title="完美解决 Linux 下 Sublime Text 中文输入">http://blog.talkfish.net/2014/05/06/sublime_text-CN_input-under_linux/</a>
+    <span class="btn" data-clipboard-text="原文: http://blog.talkfish.net/2014/05/06/sublime_text-CN_input-under_linux/　　作者: Lowboy" title="点击复制文章链接">
+        <i class="fa fa-clipboard"></i>
+    </span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。</p>
+  <script src="/js/clipboard.min.js"></script>
+  <script> var clipboard = new Clipboard('.btn'); </script>
+</div>
+<style type="text/css">
+  .copyright p .btn {
+    margin-left: 1em;
+  }
+  .copyright:hover p .btn::after {
+    content: "复制"
+  }
+  .copyright p .btn:hover {
+      color: gray;
+      cursor: pointer;
+    };
+</style>
+
+
+
+<nav id="article-nav">
+  
+    <div id="article-nav-newer" class="article-nav-title">
+      <a href="/2014/05/06/sublime-build-3059_crack/">
+        破解 Sublime-build-3059
+      </a>
+    </div>
+  
+  
+    <div id="article-nav-older" class="article-nav-title">
+      <a href="/2014/05/06/test/">
+        test(仅供测试)
+      </a>
+    </div>
+  
+</nav>
+
+  
+</article>
+
+<!-- 默认显示文章目录，在文章---前输入toc: false关闭目录 -->
+<!-- Show TOC and tocButton in default, Hide TOC via putting "toc: false" before "---" at [post].md -->
+<div id="toc" class="toc-article">
+<strong class="toc-title">文章目录</strong>
+
+</div>
+<style type="text/css">
+  .left-col .switch-btn {
+    display: none;
+  }
+  .left-col .switch-area {
+    display: none;
+  }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script type="text/javascript">
+  var toc_button= document.getElementById("tocButton");
+  var toc_div= document.getElementById("toc");
+  /* Show or hide toc when click on tocButton.
+  通过点击设置的按钮显示或者隐藏文章目录.*/
+  toc_button.onclick=function(){
+  if(toc_div.style.display=="none"){
+  toc_div.style.display="block";
+  toc_button.value="隐藏目录";
+  document.getElementById("switch-btn").style.display="none";
+  document.getElementById("switch-area").style.display="none";
+  }
+  else{
+  toc_div.style.display="none";
+  toc_button.value="显示目录";
+  document.getElementById("switch-btn").style.display="block";
+  document.getElementById("switch-area").style.display="block";
+  }
+  }
+</script>
+
+
+<div class="share">
+	<div class="bdsharebuttonbox">
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+	<a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+	<a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+	</div>
+	<script>
+	window._bd_share_config={
+		"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+	</script>
+</div>
+
+
+
+<div class="duoshuo" id="comments">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2014/05/06/sublime_text-CN_input-under_linux/" data-title="完美解决 Linux 下 Sublime Text 中文输入" data-url="http://blog.talkfish.net/2014/05/06/sublime_text-CN_input-under_linux/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"[object Object]"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+
+    <style type="text/css">
+    #scroll {
+      display: none;
+    }
+    </style>
+    <div class="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    </div>
+
+
+  
+  
+    
+    <div  class="post-nav-button">
+    <a href="/2014/05/06/sublime-build-3059_crack/" title="上一篇: 破解 Sublime-build-3059">
+    <i class="fa fa-angle-left"></i>
+    </a>
+    <a href="/2014/05/06/test/" title="下一篇: test(仅供测试)">
+    <i class="fa fa-angle-right"></i>
+    </a>
+    </div>
+  
+
+
+
+    
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+        <script>
+        var yiliaConfig = {
+        fancybox: true,
+        mathjax: false,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        open_in_new: [object Object]
+        }
+        </script>
+        
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2016 Lowboy
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
+        </div>
+    </div>
+    <div class="visit">
+      <span id="busuanzi_container_site_pv" style='display:none'>
+        <span id="site-visit" >本站到访数: 
+        <span id="busuanzi_value_site_uv"></span>
+        </span>
+      </span>
+      <span id="busuanzi_container_page_pv" style='display:none'>
+        <span id="page-visit">, 本页阅读量: 
+        <span id="busuanzi_value_page_pv"></span>
+        </span>
+      </span>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script>
+  var backgroundnum = 5;
+  var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+
+  $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+</script>
+
+
+
+
+<div class="scroll" id="scroll">
+<a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+<a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
